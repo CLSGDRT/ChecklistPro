@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="createinterface">
+        <h2>+ Ajouter une checklist</h2>
+        <form action='/create_checklist' method="post" class="create">
+            <div class="create">
+                <label for="name">TITRE : </label>
+                <input type="text" name="title_cl" id="title_cl" required />
+            <div class="create">
+                1.
+                <select name="element1" id="element1">
+                    <option value="">--Choisir votre rappel--</option>
+                    <option value="Port du casque">Port du casque</option>
+                    <option value="Feux allumés">Feux allumés</option>
+                    <option value="Fermer la porte">Fermer la porte</option>
+                    <option value="Aérer la pièce">Aérer la pièce</option>
+                </select>
+            </div>
+            <div class="create">
+                2.
+                <select name="element2" id="element2">
+                    <option value="">--Choisir votre rappel--</option>
+                    <option value="Port du casque">Port du casque</option>
+                    <option value="Feux allumés">Feux allumés</option>
+                    <option value="Fermer la porte">Fermer la porte</option>
+                    <option value="Aérer la pièce">Aérer la pièce</option>
+                </select>
+            </div>
+            <div class="create">
+                3.
+                <select name="element3" id="element3">
+                    <option value="">--Choisir votre rappel--</option>
+                    <option value="Port du casque">Port du casque</option>
+                    <option value="Feux allumés">Feux allumés</option>
+                    <option value="Fermer la porte">Fermer la porte</option>
+                    <option value="Aérer la pièce">Aérer la pièce</option>
+                </select>
+            </div>
+            <div class="boutonok">
+                <input type="submit" value="Ok" class="boutonokinput"/>
+            </div> 
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "c903cee5-0d97-49ba-818b-28f1b79263b0",
+        "title_cl": "Checklist 1",
+        "e1": "Port du casque",
+        "e2": "Feux allum\u00e9s",
+        "e3": "Fermer la porte",
+        "created_at": "2025-05-15T14:54:49.476074",
+        "tick1": false,
+        "tick2": false,
+        "tick3": false
+    },
+    {
+        "id": "a8977e3e-7e14-42bf-bc29-22121bcad4bd",
+        "title_cl": "Checklist 2",
+        "e1": "Feux allum\u00e9s",
+        "e2": "Fermer la porte",
+        "e3": "A\u00e9rer la pi\u00e8ce",
+        "created_at": "2025-05-15T14:55:07.252667",
+        "tick1": false,
+        "tick2": false,
+        "tick3": false
+    },
+    {
+        "id": "8d7e571e-3ba6-41ab-9422-6bb787d2ac75",
+        "title_cl": "Checklist 3",
+        "e1": "Fermer la porte",
+        "e2": "A\u00e9rer la pi\u00e8ce",
+        "e3": "Port du casque",
+        "created_at": "2025-05-15T14:55:21.403561",
+        "tick1": false,
+        "tick2": false,
+        "tick3": false
+    },
+    {
+        "id": "d1edf630-3cd2-403e-b4a5-55412c25573b",
+        "title_cl": "Checklist 4",
+        "e1": "A\u00e9rer la pi\u00e8ce",
+        "e2": "Fermer la porte",
+        "e3": "Feux allum\u00e9s",
+        "created_at": "2025-05-15T14:55:39.470049",
+        "tick1": false,
+        "tick2": false,
+        "tick3": false
+    }
+]

@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+}
+
+.noto-sans-custom {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  background-color: #252b2b;
+  color: #EFDFC5;
+  height: 100vh;
+}
+
+a {
+  color: #242424;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header,
+footer {
+  background-color: #EFDFC5;
+  padding: 20px 40px;
+  width: 60vh;
+  height: 3vh;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+h1{
+  padding: 40px;
+  color: #EFDFC5;
+}
+
+.round{
+    display : inline-block;
+    background-color: #8F0b13;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    box-shadow: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.createinterface{
+  display: flex;
+  position: absolute;
+  align-content: center;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-left: 10vh;
+  margin-top: 4vh;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+h2{
+  padding: 10px;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+select{
+  margin: 5px;
+  padding: 5px;
+}
+
+input{
+  margin: 5px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 5%;
+  width: 100px;
+}
+
+.boutonokinput{
+  position: relative;
+  left: 50%;
+  align-content: center;
+  width: 80px;
+  height: 35px;
+  justify-content:center ;
+  align-items: center;
+}
+
+.choixchecklist{
+  color: #EFDFC5;
+}
+
+.choixchecklist:hover{
+  color: #8F0b13;
+}
+
+.listofchecklist {
+  margin-left: 10vh;
+  margin-top: 4vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* bonne pratique responsive */
+  gap: 20px;
+  max-width: 90vw;
+  list-style: none;
+}
+
+.checklist {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #303636; /* contraste avec le fond */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  color: #EFDFC5;
+  list-style: none;
+  width: 40vh;
+}
+
+.checklist strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.checklist em {
+  font-size: 0.85em;
+  color: #bbb;
+}

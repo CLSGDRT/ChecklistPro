@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="listofchecklist">
+    {% if new_checklists %}
+      <ul>
+      {% for checklist in new_checklists %}
+        <li class="checklist">
+          <h3>Nom - {{ checklist.title_cl or checklist['title_cl'] }}</h3>
+          1 : {{ checklist.e1 or checklist['e1'] }}<br>
+          2 : {{ checklist.e2 or checklist['e2'] }}<br>
+          3 : {{ checklist.e3 or checklist['e3'] }}<br>
+          <em>Créée le {{ checklist.created_at or checklist['created_at'] }}</em>
+        </li>
+        <br>
+        <br>
+      {% endfor %}
+      </ul>
+    {% else %}
+      <p>Aucune checklist enregistrée.</p>
+    {% endif %}
+  </div>
+{% endblock %}

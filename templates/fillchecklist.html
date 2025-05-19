@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="listofchecklist">
+  <h2>{{ checklist.title_cl }}</h2>
+
+  <form method="post" action="{{ url_for('submit_checklist', checklist_id=checklist.id) }}"">
+    <ul>
+      <li>
+        <label>
+          <input type="checkbox" name="tick1" id="tick1" value="on" {% if checklist.tick1 %}checked{% endif %} />
+          {{ checklist.e1 }}
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="tick2" id="tick2" value="on" {% if checklist.tick2 %}checked{% endif %} />
+          {{ checklist.e2 }}
+        </label>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="tick3" id="tick3" value="on" {% if checklist.tick3 %}checked{% endif %} />
+          {{ checklist.e3 }}
+        </label>
+      </li>
+    </ul>
+    <div class="boutonok">
+        <input type="submit" value="Ok" class="boutonokinput"/>
+    </div> 
+  </form>
+
+  <p><em>Créée le {{ checklist.created_at }}</em></p>
+</div>
+{% endblock %}
+
